@@ -26,6 +26,10 @@
     .card-desc { color:var(--muted); margin:0 0 1rem; }
     .card-link { color:var(--brand); font-weight:700; margin-top:auto; }
     .card-link::after { content:""; position:absolute; inset:0; }
+    .card-cerrada { background:#efeae0; }
+    .card-cerrada:hover { background:#efeae0; }
+    .card-cerrada .card-num, .card-cerrada .card-title { color:var(--muted); }
+    .card-nota { margin-top:auto; color:var(--muted); font:700 .8rem ui-monospace,monospace; letter-spacing:.04em; }
     .tabla-envoltorio { overflow-x:auto; margin-top:1.25rem; border:1px solid var(--rule); }
     table { border-collapse:collapse; width:100%; min-width:34rem; background:var(--paper); }
     th, td { padding:.6rem .9rem; text-align:left; border-bottom:1px solid var(--rule); }
@@ -82,8 +86,9 @@
 
     <h2>Los tres hitos</h2>
     <p>
-      Trabajo en grupo. Pulsa <b>«Use this template»</b> en el repositorio del hito para crear el
-      vuestro: ya no se usa <i>fork</i>.
+      Trabajo en grupo. Cada hito se abre <b>cuando se entrega el anterior</b>, así que aquí irán
+      apareciendo a lo largo del cuatrimestre. Para empezar el vuestro, pulsad
+      <b>«Use this template»</b> en el repositorio del hito: ya no se usa <i>fork</i>.
     </p>
     <div class="grid">
       <article class="card">
@@ -92,17 +97,17 @@
         <p class="card-desc">Carrera de tortugas con <code>turtle</code>. Variables, condicionales y bucles.</p>
         <a class="card-link" href="https://github.com/Fundamentos-de-Programacion-IS/2627-M1-Turtle">Ver plantilla →</a>
       </article>
-      <article class="card">
-        <span class="card-num">M2 · entrega 12 nov</span>
+      <article class="card card-cerrada">
+        <span class="card-num">M2 · se abre el 8 oct</span>
         <h3 class="card-title">Arkanoid</h3>
-        <p class="card-desc">Versión básica de Arkanoid con <code>pygame</code>. Objetos y bucle de juego.</p>
-        <a class="card-link" href="https://github.com/Fundamentos-de-Programacion-IS/2627-M2-Arkanoid">Ver plantilla →</a>
+        <p class="card-desc">Versión básica de Arkanoid con <code>pygame</code>. El enunciado se publica al entregar el M1; la entrega es el 12 de noviembre.</p>
+        <span class="card-nota">Aún no disponible</span>
       </article>
-      <article class="card">
-        <span class="card-num">M3 · entrega 18 dic</span>
+      <article class="card card-cerrada">
+        <span class="card-num">M3 · se abre el 12 nov</span>
         <h3 class="card-title">Memory</h3>
-        <p class="card-desc">Juego de parejas con <code>pygame</code>. Listas, diccionarios y lógica procedural.</p>
-        <a class="card-link" href="https://github.com/Fundamentos-de-Programacion-IS/2627-M3-Memory">Ver plantilla →</a>
+        <p class="card-desc">Juego de parejas con <code>pygame</code>. El enunciado se publica al entregar el M2; la entrega es el 18 de diciembre.</p>
+        <span class="card-nota">Aún no disponible</span>
       </article>
     </div>
 
