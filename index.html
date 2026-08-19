@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Fundamentos de Programación — Universidad de Sevilla</title>
+  <meta name="description" content="Portada de la asignatura Fundamentos de Programación, 1.º de Ingeniería del Software, Universidad de Sevilla. Curso 2026/27.">
+  <style>
+    :root { --paper:#f4f0e8; --ink:#18160f; --muted:#625b4b; --brand:#a93400; --rule:#cbc3b2; }
+    * { box-sizing:border-box; }
+    body { margin:0; background:var(--paper); color:var(--ink); font:16px/1.6 system-ui,sans-serif; }
+    .page { width:min(1040px,calc(100% - 2rem)); margin:auto; padding:3rem 0; }
+    a { color:var(--brand); }
+    header { border-bottom:3px solid var(--ink); padding-bottom:1.5rem; }
+    .eyebrow { color:var(--brand); font:700 .75rem/1.2 ui-monospace,monospace; letter-spacing:.12em; text-transform:uppercase; }
+    h1 { margin:.5rem 0; font:300 clamp(2.4rem,8vw,5.2rem)/.95 Georgia,serif; }
+    h1 strong { display:block; font-weight:700; }
+    .lead { color:var(--muted); max-width:62ch; }
+    h2 { margin:2.5rem 0 .25rem; font:700 1.5rem Georgia,serif; }
+    h2 + p { margin-top:0; color:var(--muted); }
+    .grid { display:grid; grid-template-columns:repeat(auto-fit,minmax(245px,1fr)); gap:1px; margin-top:1.25rem; background:var(--rule); border:1px solid var(--rule); }
+    .card { position:relative; padding:1.25rem; background:var(--paper); display:flex; flex-direction:column; }
+    .card:hover, .card:focus-within { background:#fffaf1; }
+    .card-num { color:var(--brand); font:700 .75rem ui-monospace,monospace; letter-spacing:.08em; text-transform:uppercase; }
+    .card-title { margin:.7rem 0 .35rem; font:700 1.35rem Georgia,serif; }
+    .card-desc { color:var(--muted); margin:0 0 1rem; }
+    .card-link { color:var(--brand); font-weight:700; margin-top:auto; }
+    .card-link::after { content:""; position:absolute; inset:0; }
+    .tabla-envoltorio { overflow-x:auto; margin-top:1.25rem; border:1px solid var(--rule); }
+    table { border-collapse:collapse; width:100%; min-width:34rem; background:var(--paper); }
+    th, td { padding:.6rem .9rem; text-align:left; border-bottom:1px solid var(--rule); }
+    th { font:700 .75rem ui-monospace,monospace; letter-spacing:.08em; text-transform:uppercase; color:var(--brand); }
+    tbody tr:last-child td { border-bottom:0; }
+    .destacado td { font-weight:700; }
+    .aviso { margin-top:1.25rem; padding:1rem 1.25rem; border-left:4px solid var(--brand); background:#fffaf1; }
+    .datos { margin:1.25rem 0 0; padding:0; list-style:none; }
+    .datos li { padding:.5rem 0; border-bottom:1px solid var(--rule); display:flex; flex-wrap:wrap; gap:.75rem; }
+    .datos li:last-child { border-bottom:0; }
+    .datos b { min-width:9rem; }
+    footer { display:flex; flex-wrap:wrap; gap:1rem; justify-content:space-between; margin-top:3rem; padding-top:1rem; border-top:1px solid var(--rule); color:var(--muted); font-size:.85rem; }
+  </style>
+</head>
+<body>
+  <div class="page">
+
+    <header>
+      <div class="eyebrow">Universidad de Sevilla · Ingeniería del Software · Curso 2026/27</div>
+      <h1>Fundamentos de <strong>Programación</strong></h1>
+      <p class="lead">
+        Todo el material de la asignatura, en un solo sitio: transparencias, calendario del
+        cuatrimestre, hitos y laboratorios. Primer cuatrimestre, Python.
+      </p>
+    </header>
+
+    <h2>Empieza por aquí</h2>
+    <div class="grid">
+      <article class="card">
+        <span class="card-num">Teoría</span>
+        <h3 class="card-title">Transparencias</h3>
+        <p class="card-desc">Los doce temas, con ejemplos que se ejecutan en el navegador y versión en PDF.</p>
+        <a class="card-link" href="https://fundamentos-de-programacion-is.github.io/slides/">Abrir →</a>
+      </article>
+      <article class="card">
+        <span class="card-num">Referencia</span>
+        <h3 class="card-title">Wiki de la asignatura</h3>
+        <p class="card-desc">Normativa, guía docente y toda la información oficial. Ante la duda, manda la wiki.</p>
+        <a class="card-link" href="https://1984.lsi.us.es/wiki-fp/">Abrir →</a>
+      </article>
+      <article class="card">
+        <span class="card-num">Avisos</span>
+        <h3 class="card-title">Canal de Telegram</h3>
+        <p class="card-desc">Los anuncios del día a día: cambios de aula, recordatorios y material nuevo.</p>
+        <a class="card-link" href="https://t.me/fundamentos_de_programacion">Unirse →</a>
+      </article>
+      <article class="card">
+        <span class="card-num">Entregas</span>
+        <h3 class="card-title">Enseñanza Virtual</h3>
+        <p class="card-desc">Formularios de entrega de los hitos y calificaciones oficiales.</p>
+        <a class="card-link" href="https://ev.us.es/">Abrir →</a>
+      </article>
+    </div>
+
+    <h2>Los tres hitos</h2>
+    <p>
+      Trabajo en grupo. Pulsa <b>«Use this template»</b> en el repositorio del hito para crear el
+      vuestro: ya no se usa <i>fork</i>.
+    </p>
+    <div class="grid">
+      <article class="card">
+        <span class="card-num">M1 · entrega 8 oct</span>
+        <h3 class="card-title">Turtle Game</h3>
+        <p class="card-desc">Carrera de tortugas con <code>turtle</code>. Variables, condicionales y bucles.</p>
+        <a class="card-link" href="https://github.com/Fundamentos-de-Programacion-IS/2627-M1-Turtle">Ver plantilla →</a>
+      </article>
+      <article class="card">
+        <span class="card-num">M2 · entrega 12 nov</span>
+        <h3 class="card-title">Arkanoid</h3>
+        <p class="card-desc">Versión básica de Arkanoid con <code>pygame</code>. Objetos y bucle de juego.</p>
+        <a class="card-link" href="https://github.com/Fundamentos-de-Programacion-IS/2627-M2-Arkanoid">Ver plantilla →</a>
+      </article>
+      <article class="card">
+        <span class="card-num">M3 · entrega 18 dic</span>
+        <h3 class="card-title">Memory</h3>
+        <p class="card-desc">Juego de parejas con <code>pygame</code>. Listas, diccionarios y lógica procedural.</p>
+        <a class="card-link" href="https://github.com/Fundamentos-de-Programacion-IS/2627-M3-Memory">Ver plantilla →</a>
+      </article>
+    </div>
+
+    <div class="aviso">
+      <p style="margin:0">
+        Los hitos <b>no puntúan por sí solos</b>. Son requisito de entrega —hay que entregarlos en
+        plazo y tienen que ejecutarse— y suman hasta <b>+0,5</b> por calidad. La nota de teoría sale
+        de los dos controles de laboratorio.
+      </p>
+    </div>
+
+    <h2>Fechas evaluables del cuatrimestre</h2>
+    <p>Los controles se hacen en el laboratorio, individualmente, y se corrigen de forma automática.</p>
+    <div class="tabla-envoltorio">
+      <table>
+        <thead>
+          <tr><th>Fecha</th><th>Prueba</th><th>¿Cuenta?</th></tr>
+        </thead>
+        <tbody>
+          <tr><td>jueves 8 de octubre</td><td>Entrega M1</td><td>Requisito</td></tr>
+          <tr><td>martes 20 de octubre</td><td>Simulacro 0 · 40 min</td><td>No — entrenamiento</td></tr>
+          <tr><td>jueves 12 de noviembre</td><td>Entrega M2</td><td>Requisito (+ bonus)</td></tr>
+          <tr class="destacado"><td>martes 17 de noviembre</td><td>Control 1 · 90 min</td><td>Sí — 40 % de los controles</td></tr>
+          <tr class="destacado"><td>martes 15 de diciembre</td><td>Control 2 · 100 min</td><td>Sí — 60 % de los controles</td></tr>
+          <tr><td>viernes 18 de diciembre</td><td>Entrega M3</td><td>Requisito (+ bonus)</td></tr>
+          <tr><td>enero de 2027</td><td>Examen práctico</td><td>70 % de la nota del cuatrimestre</td></tr>
+        </tbody>
+      </table>
+    </div>
+
+    <h2>Laboratorios</h2>
+    <p>
+      Los enunciados de las sesiones prácticas se publican como repositorios independientes.
+    </p>
+    <div class="grid">
+      <article class="card">
+        <span class="card-num">Prácticas</span>
+        <h3 class="card-title">Enunciados de laboratorio</h3>
+        <p class="card-desc">Todos los repositorios <code>LAB-*</code> de la asignatura.</p>
+        <a class="card-link" href="https://github.com/orgs/Fundamentos-de-Programacion-IS/repositories?q=topic%3Alaboratorio">Ver listado →</a>
+      </article>
+      <article class="card">
+        <span class="card-num">Autoestudio</span>
+        <h3 class="card-title">Sesiones de entrenamiento</h3>
+        <p class="card-desc">Ejercicios para practicar por tu cuenta entre sesiones.</p>
+        <a class="card-link" href="https://github.com/orgs/Fundamentos-de-Programacion-IS/repositories?q=topic%3Aentrenamiento">Ver listado →</a>
+      </article>
+      <article class="card">
+        <span class="card-num">Exámenes</span>
+        <h3 class="card-title">Exámenes de otros cursos</h3>
+        <p class="card-desc">Convocatorias anteriores, para entrenar en el formato real.</p>
+        <a class="card-link" href="https://github.com/orgs/Fundamentos-de-Programacion-IS/repositories?q=topic%3Aexamen">Ver listado →</a>
+      </article>
+    </div>
+
+    <h2>Horario y profesorado</h2>
+    <ul class="datos">
+      <li><b>Teoría</b><span>Jueves 10:40–12:30, aula A0.12 <i>(y también los martes durante las tres primeras semanas)</i></span></li>
+      <li><b>Laboratorio</b><span>Martes 12:40–14:30 · F1.31 (L1) · F1.32 (L2) · F1.33 (L3)</span></li>
+      <li><b>Profesorado</b><span>José A. Galindo (teoría y L1) · Jorge García (L2) · José E. Sánchez (L3)</span></li>
+      <li><b>Periodo docente</b><span>7 de septiembre – 18 de diciembre de 2026</span></li>
+      <li><b>Examen práctico</b><span>1.ª convocatoria: 8 – 25 de enero de 2027</span></li>
+    </ul>
+
+    <footer>
+      <span>Fundamentos de Programación · 1.º Ingeniería del Software</span>
+      <span>Escuela Técnica Superior de Ingeniería Informática · Universidad de Sevilla</span>
+    </footer>
+
+  </div>
+</body>
+</html>
