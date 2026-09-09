@@ -5,9 +5,8 @@ Página de entrada de la asignatura: <https://fundamentos-de-programacion-is.git
 Es un `index.html` estático, sin proceso de compilación. GitHub Pages lo sirve directamente
 desde la rama `main`. Para cambiar algo, edita `index.html` y haz push.
 
-Reúne los enlaces que el alumnado necesita el primer día: transparencias, wiki, canal de
-Telegram, Enseñanza Virtual, las plantillas de los tres hitos, las fechas evaluables del
-cuatrimestre y los listados de laboratorios.
+Reúne los enlaces que el alumnado necesita el primer día: transparencias, canal de Telegram,
+Enseñanza Virtual, las plantillas de los tres hitos y las fechas evaluables del cuatrimestre.
 
 Los listados de repositorios se generan solos a partir de los *topics* de la organización
 (`laboratorio`, `entrenamiento`, `examen`): al etiquetar un repositorio nuevo aparece en la
